@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\ActionRoguelike.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{26918460-8A1C-4D17-9125-EFB1A8CB0F2F}</UniqueIdentifier>
+      <UniqueIdentifier>{96892F97-3D56-4BA4-A7DA-A151E129D478}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ActionRoguelike.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,10 @@
     <None Include="..\..\Source\ActionRoguelikeEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{10392FE4-07A7-4EAA-8320-A3A600A532BE}</UniqueIdentifier>
+      <UniqueIdentifier>{466B687E-90B8-476A-861C-DAB4C7E59D83}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -24,7 +26,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\ActionRoguelike">
-      <UniqueIdentifier>{7E1D8B37-4D33-40FA-9A0E-6D27D85DAA9E}</UniqueIdentifier>
+      <UniqueIdentifier>{326CBA02-BF28-4979-813F-F1C2CE33D4DC}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ActionRoguelike\ActionRoguelike.Build.cs">
       <Filter>Source\ActionRoguelike</Filter>

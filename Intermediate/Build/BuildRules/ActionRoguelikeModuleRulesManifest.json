@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"G:\\GitHub\\ActionRoguelike\\ActionRoguelike\\Source\\ActionRoguelike\\ActionRoguelike.Build.cs",
-		"G:\\GitHub\\ActionRoguelike\\ActionRoguelike\\Source\\ActionRoguelike.Target.cs",
-		"G:\\GitHub\\ActionRoguelike\\ActionRoguelike\\Source\\ActionRoguelikeEditor.Target.cs"
+		"D:\\Users\\yiuja\\Source\\Repos\\ActionRoguelike\\Source\\ActionRoguelike\\ActionRoguelike.Build.cs",
+		"D:\\Users\\yiuja\\Source\\Repos\\ActionRoguelike\\Source\\ActionRoguelike.Target.cs",
+		"D:\\Users\\yiuja\\Source\\Repos\\ActionRoguelike\\Source\\ActionRoguelikeEditor.Target.cs"
 	],
 	"EngineVersion": "4.27.1"
 }
