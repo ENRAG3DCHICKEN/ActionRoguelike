@@ -33,7 +33,11 @@ protected:
 	void MoveForward(float value)
 	{
 		AddMovementInput(GetActorForwardVector(), value);
-		
+	}
+
+	void MoveRight(float value)
+	{
+		AddMovementInput(GetActorRightVector(), value);
 	}
 
 public:	
