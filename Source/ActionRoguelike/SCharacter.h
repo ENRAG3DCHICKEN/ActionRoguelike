@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Kismet/KismetMathLibrary.h"
 #include "SCharacter.generated.h"
 
 
@@ -30,16 +31,6 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	void MoveForward(float value)
-	{
-		AddMovementInput(GetActorForwardVector(), value);
-	}
-
-	void MoveRight(float value)
-	{
-		AddMovementInput(GetActorRightVector(), value);
-	}
-
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -47,4 +38,29 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	void MoveForward(float value)
+	{
+		FRotator ControlRot = GetControlRotation();
+		ControlRot.Pitch = 0.0f;
+		ControlRot.Roll = 0.0f;
+		
+		AddMovementInput(ControlRot.Vector(), value);
+	}
+
+	void MoveRight(float value)
+	{
+		FRotator ControlRot = GetControlRotation();
+		ControlRot.Pitch = 0.0f;
+		ControlRot.Roll = 0.0f;
+
+		// X = Forward (Red)
+		// Y = Right (Green)
+		// Z = Up (Blue)
+		
+		FVector RightVector = FRotationMatrix(ControlRot).GetScaledAxis(EAxis::Y);
+		
+		AddMovementInput(RightVector, value);
+	}
+
 };
+
